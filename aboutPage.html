@@ -1,0 +1,33 @@
+{% extends 'main/base.html' %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+
+    <body>
+        {% block content %}
+
+            <div class="topNav">
+                <a href="/">Home</a>
+                <a href="/eligible">Eligible</a>
+                <a href="/notEligible">Not Eligible</a>
+                <a class="active" href="/about">About Us</a>
+            </div>
+
+            <h1 style="text-align: center"><b><u>Housing Duty Solicitor</u></b></h1>
+            <h5 style="text-align: center">About Us</h5>
+
+            <hr style="height: 3px">
+
+            <div style="text-align: center">
+                 <h6 style="width: 100px">
+                    This is a Web Application for you if you are a tenant living in social housing in Southwark and Lambeth and being taken to court for rent arrears.
+                </h6>
+            </div>
+        {% endblock content %}
+    </body>
+</html>
